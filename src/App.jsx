@@ -2,7 +2,7 @@ import "./App.css";
 import ExpenseItem from "./components/ExpenseItems";
 import { expenses } from "./data/Data";
 
-function App() {
+const App = () => {
   return (
     <>
       {expenses.map((expense) => (
@@ -14,6 +14,6 @@ function App() {
       ))}
     </>
   );
-}
+};
 
 export default App;
