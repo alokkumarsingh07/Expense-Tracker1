@@ -6,10 +6,10 @@ function ExpenseDate({ date }) {
   const year = date.getFullYear();
   return (
     <>
-      <div>
-        <div>{month}</div>
-        <div>{day}</div>
-        <div>{year}</div>
+      <div className="expense-date">
+        <div className="expense-date__day">{day}</div>
+        <div className="expense-date__month">{month}</div>
+        <div className="expense-date__day">{year}</div>
       </div>
     </>
   );

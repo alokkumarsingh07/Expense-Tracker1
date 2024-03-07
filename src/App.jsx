@@ -1,6 +1,6 @@
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItems";
-import { expenses } from "./data/Data";
+import ExpenseItem from "./components/Expense/ExpenseItems";
+import { expenses } from "./components/data/Data";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
           title={expense.title}
           amt={expense.amount}
           date={expense.date}
+          key={expense.id}
         />
       ))}
     </>

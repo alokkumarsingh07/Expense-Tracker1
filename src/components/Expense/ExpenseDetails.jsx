@@ -1,5 +1,5 @@
 import React from "react";
-
+import './ExpenseItems.css'
 function ExpenseDetails({title,amt}) {
   return (
     <>
