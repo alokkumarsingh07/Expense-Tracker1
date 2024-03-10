@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
-function NewExpense(prop) {
+function NewExpense(props) {
   const [showForm, setShowForm] = useState(false);
 
   const handleFormVisiblity = () => {
@@ -15,7 +15,7 @@ function NewExpense(prop) {
       <div className="new-expense">
         {showForm && (
           <ExpenseForm
-            onSaveExpense={prop.onSaveExpense}
+            onSaveExpense={props.onSaveExpense}
             onHideForm={handleFormVisiblity}
           />
         )}

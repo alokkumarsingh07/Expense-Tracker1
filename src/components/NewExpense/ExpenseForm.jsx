@@ -43,9 +43,9 @@ const ExpenseForm = (props) => {
     console.log(expenseData);
     props.onSaveExpense(expenseData);
 
+    setTitle("");
     setAmount("");
     setDate("");
-    setTitle("");
 
     props.onHideForm();
   };

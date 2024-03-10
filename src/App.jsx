@@ -7,12 +7,12 @@ import { expenses } from "./components/data/Data";
 const App = () => {
   const [expense, setExpense] = React.useState(expenses);
 
-  const onSaveExpense = (expens) => {
+  const addExpenseHandler = (expens) => {
     setExpense((prevState) => [...prevState, expens]);
   };
   return (
     <>
-      <NewExpense onSaveExpense={onSaveExpense} />
+      <NewExpense onSaveExpense={addExpenseHandler} />
       {expenses.map((expense) => (
         <ExpenseItem
           title={expense.title}
