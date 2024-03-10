@@ -9,6 +9,7 @@ const ExpenseForm = (props) => {
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
+    console.log(event.target.value);
   };
 
   const handleAmtChange = (event) => {
