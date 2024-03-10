@@ -35,19 +35,15 @@ const ExpenseForm = (props) => {
     event.preventDefault();
 
     const expenseData = {
-      title,
+      title: title,
       amount: +amount,
       date: new Date(date),
       id: Math.random().toString(),
     };
-
+    console.log(expenseData)
     props.onSaveExpense(expenseData);
 
-    setAmount("");
-    setDate("");
-    setTitle("");
-
-    props.onHideForm();
+  
   };
 
   return (
