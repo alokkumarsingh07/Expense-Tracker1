@@ -40,10 +40,14 @@ const ExpenseForm = (props) => {
       date: new Date(date),
       id: Math.random().toString(),
     };
-    console.log(expenseData)
+    console.log(expenseData);
     props.onSaveExpense(expenseData);
 
-  
+    setAmount("");
+    setDate("");
+    setTitle("");
+
+    props.onHideForm();
   };
 
   return (
